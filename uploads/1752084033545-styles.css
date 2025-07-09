@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=SUSE:wght@100..800&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6fa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: auto;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f3f3f3;
+}
+
+.grupo {
+    background-color: #e7e7e7;
+    border-radius: 25px;
+}
+
+.visor {
+    display: flex;
+    padding-right: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    background-color: #e7e7e7;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.linha {
+    display: flex;
+    justify-content: stretch;
+    text-align: justify;
+}
+
+#radius {
+    border-radius: 0 0 0 10px;
+}
+
+#reset {
+    background-color: rgb(250, 108, 108);
+}
+
+input {
+    width: 54px;
+    padding: 20px;
+    background-color: #e7e7e7;
+    border: none;
+}
+
+input:hover {
+    background-color: #a8a8a8;
+}
+
+#operacao, #backspace {
+    background-color: #d8d8d8;
+}
+
+#operacao:hover, #backspace:hover {
+    background-color: #a8a8a8;
+}
+
+#dobroV {
+    padding: 0 53px;
+    border-radius: 0 0 10px 0 ;
+    background-color: rgb(23, 169, 253);
+}
+
+#dobroV:hover {
+    background-color: rgb(11, 132, 202);
+}
