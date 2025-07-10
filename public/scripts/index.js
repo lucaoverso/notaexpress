@@ -15,22 +15,27 @@ const quill = new Quill('#editor', {
 function acao(tipo) {
   const nota = document.getElementById("editorDiv");
   const arquivo = document.getElementById("arquivo");
+  const salvar = document.getElementById("salvar");
 
   const notaAtiva = !nota.classList.contains("desativado");
   const arquivoAtivo = !arquivo.classList.contains("desativado");
 
   if (tipo === "nota") {
     if (notaAtiva) {
-      nota.classList.add("desativado"); // oculta se já estiver visível
+      nota.classList.add("desativado");
+      salvar.classList.add("desativado"); // oculta se já estiver visível
     } else {
       nota.classList.remove("desativado");
-      arquivo.classList.add("desativado"); // oculta o outro
+      arquivo.classList.add("desativado"); 
+      salvar.classList.remove("desativado");// oculta o outro
     }
   } else if (tipo === "arquivo") {
     if (arquivoAtivo) {
       arquivo.classList.add("desativado");
+      salvar.classList.add("desativado");
     } else {
       arquivo.classList.remove("desativado");
+      salvar.classList.remove("desativado");
       nota.classList.add("desativado");
     }
   }

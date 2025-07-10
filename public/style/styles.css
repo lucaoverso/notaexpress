@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
 body {
     font-family: sans-serif;
     max-width: 700px;
     margin: 40px auto;
     text-align: center;
+    font-family: 'Tiktok Sans', sans-serif;
+}
+
+button {
+    background-color: #0067f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #0258cf;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.inputCodigo {
+    width: 225px;
+    padding: 10px;
+    margin-bottom: 24px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    outline: none;
+}
+
+.inputCodigo:focus {
+    border: 2px solid #5a6169;
 }
 
 #editor {

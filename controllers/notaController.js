@@ -2,7 +2,6 @@ import express from 'express';
 import multer from 'multer';
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 import { createNota, getNotaByCodigo } from '../models/notaModel.js';
 
 const router = express.Router();
